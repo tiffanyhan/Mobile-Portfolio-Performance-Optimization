@@ -16,15 +16,24 @@ How to access and use the pizzeria page:
 	5.  Move the slider located at the top of the menu in order to
 		change the size of the pizzas.
 
-======================================================================
+===========================================================================
 
 PERFORMANCE OPTIMIZATIONS
 =========================
 
-a) Performance optimizations for page scrolling:
+a) General optimizations:
 
-	1.  The number of pizzas created for the background was reduced
-		from 200 to 24.
+	1.  document.querySelector was replaced by
+		document.getElementById or document.getElementsByClassName.
+	2.  variable declarations and if possible, variable assignments were
+		moved out of for loops
+
+
+b) Performance optimizations for page scrolling:
+
+	1.  The number of pizzas created for the background was changed so
+		that it is dynamically calculated.  This way, no extra pizza
+		movers are unnecessarily generated.
 	2.  In the function updatePositions, the items variable was moved
 		outside of the function so that accessing the DOM only happens
 		once instead of at every scroll event.  In addition,
@@ -36,7 +45,7 @@ a) Performance optimizations for page scrolling:
 		is so that the DOM is accessed once per scroll event instead
 		of 24 times per scroll event.
 
-b) Performance optimizations for changing pizza sizes:
+c) Performance optimizations for changing pizza sizes:
 
 	1.  The function determineDx within resizePizzas was renamed to
 		determineWidth, and all declared and defined variables were
@@ -56,7 +65,7 @@ b) Performance optimizations for changing pizza sizes:
 	4.  The only thing left in the for loop is code that changes
 		the width of each pizza to the new width.
 
-=========================================================================
+===============================================================================
 
 Authors: Udacity and Tiffany Han
 
