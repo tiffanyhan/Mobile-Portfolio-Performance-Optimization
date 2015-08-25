@@ -68,5 +68,3 @@ c) Performance optimizations for changing pizza sizes:
 ===============================================================================
 
 Authors: Udacity and Tiffany Han
-
-Source code: https://github.com/tiffanyhan/frontend-nanodegree-mobile-portfolio
