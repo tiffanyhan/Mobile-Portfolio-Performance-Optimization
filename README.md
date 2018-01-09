@@ -1,4 +1,4 @@
-MOBILE PORTFOLIO PROJECT AND PIZZERIA PAGE
+Mobile Portfolio Page
 ===========================================
 
 This is a portfolio page that links to a page for a pizzeria.
@@ -18,7 +18,7 @@ How to access and use the pizzeria page:
 
 ===========================================================================
 
-PERFORMANCE OPTIMIZATIONS
+Performance Optimizations
 =========================
 
 a) General optimizations:
